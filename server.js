@@ -7,7 +7,9 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://ananthvivaran.github.io/my-fortress/'
+}));
 
 const url = 'mongodb://localhost:27017';
 const dbName = 'filefortress';

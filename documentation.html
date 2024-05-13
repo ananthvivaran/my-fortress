@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Encryption and Decryption Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <style>
+        body {
+            font-family: frijole,sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: black;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJd4E-4EkVr-FXu-CfD7INbaa4VeeeFgV2w&usqp=CAU');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        p {
+            color: #666;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            display: block;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="file"], input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Encryption and Decryption Documentation</h1>
+
+    <h2>Introduction</h2>
+    <p>Welcome to our PDF Encryption and Decryption service documentation. This service allows you to encrypt and decrypt PDF files securely using keys or passwords of your choice.</p>
+
+    <h2>How to Use</h2>
+    <ol>
+        <li>Select File: Choose the PDF file you want to encrypt or decrypt.</li>
+        <li>Encryption:
+            <ol>
+                <li>Choose Encryption: Select the encryption option.</li>
+                <li>Enter Key/Password: Provide the key or password for encryption.</li>
+                <li>Encrypt: Click on the encrypt button to encrypt the PDF file.</li>
+            </ol>
+        </li>
+        <li>Decryption:
+            <ol>
+                <li>Choose Decryption: Select the decryption option.</li>
+                <li>Enter Key/Password: Provide the key or password used for encryption.</li>
+                <li>Decrypt: Click on the decrypt button to decrypt the PDF file.</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>Example Code</h2>
+    <p>Below is an example of how you can use our service with JavaScript:</p>
+    <pre><code>
+const fileInput = document.getElementById('file-input');
+const keyInput = document.getElementById('key-input');
+const encryptBtn = document.getElementById('encrypt-btn');
+const decryptBtn = document.getElementById('decrypt-btn');
+
+encryptBtn.addEventListener('click', () => {
+    // Get selected file and key
+    const file = fileInput.files[0];
+    const key = keyInput.value;
+
+    // Encrypt file using key
+    // Your encryption logic here
+});
+
+decryptBtn.addEventListener('click', () => {
+    // Get selected file and key
+    const file = fileInput.files[0];
+    const key = keyInput.value;
+
+    // Decrypt file using key
+    // Your decryption logic here
+});
+    </code></pre>
+
+    <h2>Security Considerations</h2>
+    <p>Ensure that you choose a strong key or password for encryption to maintain the security of your PDF files. Avoid sharing your encryption keys or passwords with unauthorized individuals.</p>
+
+    <h2>Support</h2>
+    <p>If you encounter any issues or have questions regarding our service, feel free to contact our support team at support@example.com.</p>
+</body>
+</html>
